@@ -1,0 +1,103 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(135deg, #6a85b6, #bac8e0);
+    color: #333;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Alineación vertical superior */
+    width: 80%;
+    max-width: 1200px; /* Ancho máximo del contenedor principal */
+    background: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.search-section {
+    flex: 1; /* Ocupa todo el espacio disponible */
+    margin-right: 20px; /* Espacio entre las secciones */
+}
+
+.table-section {
+    flex: 1; /* Ocupa todo el espacio disponible */
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+input {
+    padding: 12px 20px;
+    font-size: 18px;
+    border: 2px solid #6a85b6;
+    border-radius: 25px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+input:focus {
+    border-color: #485b73;
+}
+
+button {
+    padding: 12px 30px;
+    font-size: 18px;
+    border: none;
+    border-radius: 25px;
+    background: #6a85b6;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background: #485b73;
+    transform: scale(1.05);
+}
+
+.pokemon-info {
+    background: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+}
+
+#pokemonTable {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+#pokemonTable th, #pokemonTable td {
+    padding: 12px;
+    text-align: center;
+}
+
+#pokemonTable th {
+    background-color: #6a85b6;
+    color: #fff;
+}
+
+#pokemonTable tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#pokemonTable tbody tr:hover {
+    background-color: #ddd;
+}

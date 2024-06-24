@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokémon Info</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="search-section">
+            <h1>Buscar Pokémon</h1>
+            <div class="search-container">
+                <input type="text" id="pokemonName" placeholder="Ingrese nombre del Pokémon">
+                <button onclick="searchPokemon()">Buscar</button>
+            </div>
+            
+            <div class="pokemon-info" id="pokemonInfo">
+                <!-- Aquí se mostrará la información del Pokémon -->
+            </div>
+        </div>
+
+        <div class="table-section">
+            <h2>Pokémon Buscados</h2>
+            <table id="pokemonTable">
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Tipo</th>
+                        <th>Altura</th>
+                        <th>Peso</th>
+                    </tr>
+                </thead>
+                <tbody id="pokemonTableBody">
+                    <!-- Aquí se agregarán las filas de los Pokémon buscados -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="script2.js"></script>
+</body>
+</html>
